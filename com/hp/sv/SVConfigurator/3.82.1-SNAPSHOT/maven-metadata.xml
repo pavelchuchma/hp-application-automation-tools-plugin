@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.hp.sv</groupId>
+  <artifactId>SVConfigurator</artifactId>
+  <version>3.82.1-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20160906.141538</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20160906141538</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>3.82.1-20160906.141538-1</value>
+        <updated>20160906141538</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>3.82.1-20160906.141538-1</value>
+        <updated>20160906141538</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>zip</extension>
+        <value>3.82.1-20160906.141538-1</value>
+        <updated>20160906141538</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
