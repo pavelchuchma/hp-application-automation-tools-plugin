@@ -5,11 +5,13 @@
 
     <groupId>com.hp.sv</groupId>
     <artifactId>SVConfigurator</artifactId>
-    <version>3.82.1</version>
+    <version>3.82.1-SNAPSHOT</version>
 
     <properties>
         <jdk.version>1.6</jdk.version>
         <build.finalName>HP.SV.SVConfigurator</build.finalName>
+        <!-- github server corresponds to entry in ~/.m2/settings.xml -->
+        <github.global.server>github</github.global.server>
     </properties>
 
     <distributionManagement>
@@ -142,7 +144,8 @@
                 <artifactId>maven-deploy-plugin</artifactId>
                 <version>2.8.2</version>
                 <configuration>
-                    <altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>
+                    <altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo
+                    </altDeploymentRepository>
                 </configuration>
             </plugin>
 
@@ -162,7 +165,7 @@
                     <!-- If you remove this then the old artifact will be removed and new
                                one will replace. But with the merge tag you can just release by changing
                                                                 the version -->
-                    <merge>true</merge>
+                    <!--<merge>true</merge>-->
                     <includes>
                         <include>**/*</include>
                     </includes>
@@ -183,9 +186,7 @@
         </plugins>
     </build>
 
-
     <dependencies>
-
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-jdk14</artifactId>
